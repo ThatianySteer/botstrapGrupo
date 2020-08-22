@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BootStrap</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header class="container-fluid menu">
+        <div class="row ">
+            <div class="col-2">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./resources/img/logo.jpeg" width="100" height="100" class="logoMarca">
+                </a>
+            </div>
+
+            <div class="col  d-flex flex-row-reverse">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <button class="navbar-toggler " type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class=" collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Produtos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="index.html">Primavera Verão</a>
+                                    <a class="dropdown-item" href="index.html">Outono Inverno</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contato.html">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-info" type="button" data-toggle="modal"
+                                    data-target="#exampleModal" href="#">Login</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Entrar na sua Conta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" required>
+                                <small id="emailHelp" class="form-text text-muted">Digite seu email.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword1">Password</label>
+                                <input type="password" class="form-control" id="inputPassword1" required>
+                                <small id="inputPassword1" class="form-text text-muted">Digite sua senha.</small>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Logar</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container medidas">
+        <br>
+        <h1>Como escolher o tamanho?</h1>
+        <br>
+        <p>Compare as medidas do seu corpo com esta tabela.
+        Clique sobre as medidas para saber como tira-las</p>
+        <div class="tabela-medidas">
+            <table>
+                <tr>
+                    <th>TAMANHO</th>
+                    <th>BUSTO</th>
+                    <th>QUADRIL</th>
+                    <th>CINTURA</th>
+                </tr>
+                <tr>
+                    <td>PP</td>
+                    <td>78 a 82</td>
+                    <td>88 a 92</td>
+                    <td>60 a 64</td>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td>82 a 90</td>
+                    <td>92 a 100</td>
+                    <td>64 a 72</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>90 a 98</td>
+                    <td>100 a 108</td>
+                    <td>72 a 80</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>104 a 112</td>
+                    <td>114 a 122</td>
+                    <td>90 a 98</td>
+                </tr>
+                <tr>
+                    <td>GG</td>
+                    <td>112 a 120</td>
+                    <td>122 a 130</td>
+                    <td>98 a 108</td>
+                </tr>
+                <tr>
+                    <td>EG</td>
+                    <td>120 a 128</td>
+                    <td>130 a 138</td>
+                    <td>108 a 114</td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="background-color: #e5989b; color: #ffcdb2;">Medidas em centímetros</td>
+                </tr>
+            </table>
+            <div class="botoes-tabela">
+                <a href="./medirBusto.html">
+                    <div class="botao-como-medir"></div>
+                </a>
+                <a href="./medirQuadril.html">
+                    <div class="botao-como-medir"></div>
+                </a>
+                <a href="./medirCintura.html">
+                    <div class="botao-como-medir"></div>
+                </a>                
+            </div>
+        </div>
+        <br>
+        <a href="./media.html">
+        <div class="botao-voltar">
+        VOLTAR
+        </div>
+        </a>
+        
+        <br><br>        
+    </main>
+    <footer class="container-fluid rodape">
+        <div class="row">
+            <div class="col-12">
+                <p>Nossas redes sociais</p>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col">
+                <img src="./resources/img/facebook.svg" alt="" class="iconeR">
+            </div>
+            <div class="col">
+                <img src="./resources/img/linkedin.svg" alt="" class="iconeR">
+            </div>
+            <div class="col">
+                <img src="./resources/img/twitter.svg" alt="" class="iconeR">
+            </div>
+            <div class="col">
+                <img src="./resources/img/youtube.svg"  alt="" class="iconeR">
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
